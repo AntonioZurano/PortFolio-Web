@@ -1,9 +1,16 @@
+/*ESTILOS GENERALES*/
+:root{
+    --color-principal: #FFFFFF;
+    --color-secondary: #04B4E0;
 
+    --color-background: #F2F7F9;
+    --color-transparent: transparent;
 
-h1{
-    font-family: "Poppins", sans-serif; 
-    font-size: 50px;
-    font-weight: bold;
-    font-style: italic;
-
+    --color-icon: #B5B6B7;
+    --color-subtitle: #888;
+    
 }
+
+
+/*ESTRUCTURA GENERAL*/
+
