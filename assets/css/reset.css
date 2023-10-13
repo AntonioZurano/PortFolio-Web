@@ -39,7 +39,7 @@ p a{
     text-decoration: underline;
     color: inherit;
 }
-img. video, iframe, picture, figure {
+img, video, iframe, picture, figure {
     display: block;
     max-width: 100%;
 }
