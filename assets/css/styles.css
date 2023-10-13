@@ -1,4 +1,4 @@
-/*ESTILOS GENERALES*/
+/*DEFINICION VARIABLES*/
 :root{
     --color-principal: #FFFFFF;
     --color-secondary: #04B4E0;
@@ -7,10 +7,13 @@
     --color-transparent: transparent;
 
     --color-icon: #B5B6B7;
+    --color-titles: #222222;
     --color-subtitle: #888;
+    --color-text: #555;
+
     
 }
-
+/*ESTILOS GENERALES*/
 
 /*ESTRUCTURA GENERAL*/
 
