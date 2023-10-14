@@ -230,7 +230,33 @@ body {
 }
 
 
-/*PROVISIONAL LUEGO LO HACEMOS*/
+/*MENU NAVEGACION LATERAL*/
 .layout__menu {
-    display: none !important;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -50px;
+    background-color: var(--color-transparent);
 }
+
+.menu__list {
+    position: relative;
+    background-color: var(--color-principal);
+
+
+}
+
+.menu__option {
+    display:block;
+    width: 100%;
+    text-align: center;
+}
+
+.menu__icon {
+    color: var(--color-icon);
+    font-size:2.8rem;
+
+}
+
+
+
