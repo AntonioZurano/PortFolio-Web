@@ -124,9 +124,23 @@ body {
     
 }
 
+.user-info__name {
+    margin-top: 2.6rem;    
+    color: var(--color-principal);
+    font-size: 3.2rem;
+    font-weight: bold;
+}
 
+.user-info__job {
+    margin-top: 0.5rem;    
+    font-size: 1.7rem;
+    font-weight: 200;
+    color: var(--color-principal);
+}
 
-
+.layout__menu {
+    display: none !important;
+}
 
 /*CONTENEDOR PRINCIPAL*/
 .layout__content {
