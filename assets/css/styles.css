@@ -47,7 +47,6 @@ body {
     width:75%;
     height: 80vh;
     min-height: 80vh;
-
     margin: 10vh auto;
 
     display: grid;
@@ -58,14 +57,14 @@ body {
 
     /* Sombra detras del layout*/
     border-radius: 4rem;
-    box-shadow: 0 0 100px -5px rgb(0, 0, 0  / 25%);
+    box-shadow: 0 0 100px -5px rgba(0, 0, 0, 0.25);
 
    /* overflow: hidden;*/
 
 }
 
 
-/*BARRA LA TERAL AZUL*/
+/*BARRA LATERAL AZUL*/
 .layout__aside {
     grid-area: aside;
     background-color: var(--color-secondary);
@@ -89,20 +88,44 @@ body {
   /*  padding: 2rem 0;*/
 }
 
-.user-info__container-image{
-    position: relative;
+.user-info__container-image {
     display: inline-block;
+    position: relative;
     width: 18rem;
     margin-top: 7rem;
-    background-color: var(--color-principal);
+   /* background-color: var(--color-principal);
     border: 3px solid var(--color-principal);
     border-radius: 20rem;
-    overflow: hidden;
+    overflow: hidden;*/
+    z-index: 1;
 }
 
-.user-info__imagen {
+.user-info__image {
     width: 100%; 
+    background-color: var(--color-principal);
+    border: 3px solid var(--color-principal);
+    border-radius: 20rem; 
 }
+
+.user-info__container-image::after {
+    content: "hola";
+    position: absolute;
+    top: 5%;
+    left: 9%;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-image: -webkit-repeating-radial-gradient(center center, #fff, #fff 1px, transparent 0px, transparent 100%);
+    background-size: 0.6rem 0.6rem;
+    opacity: 0.4;
+    border-radius: 20rem;
+    opacity: 0.4;
+
+    
+}
+
+
+
 
 
 /*CONTENEDOR PRINCIPAL*/
