@@ -331,4 +331,37 @@ body {
     color: var(--color-secondary);
 }
 
+/** SOBRE MI - INFORMACION PERSONAL */
 
+.about__personal-info {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 5rem;
+}
+
+.personal-info__bio {
+    flex-basis: 56%;
+}
+
+.personal-info__description {
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+    color: var(--color-subtitle);
+}
+
+.personal-info__data {
+    flex-basis: 44%;
+    margin-left: 5rem;
+    padding: 0 1.5rem;
+}
+
+.personal-info__option {
+    margin-bottom: 1rem;
+}
+
+.personal-info__title {
+    margin-right: 0.5rem;
+    font-weight: 600;
+    color: var(--color-secondary);
+}
