@@ -302,3 +302,33 @@ body {
     padding: 6rem;
     overflow: auto;
 }
+
+.about__header {
+    display:inline-block;
+    margin-bottom: 4.5rem;
+}
+
+.about__title {
+    font-size: 3.2rem;
+    position: relative;
+}
+
+.about__title::after{
+    content: "";
+    position: absolute;
+    top: 20px;
+
+    right: -25px;
+    width: 50px;
+    height: 30px;
+    background-image: -webkit-repeating-radial-gradient(center center, var(--color-secondary),var(--color-secondary) 1px, transparent 0px, transparent 100%);
+    background-size: 0.6rem 0.6rem;
+
+
+}
+
+.title__color {
+    color: var(--color-secondary);
+}
+
+
