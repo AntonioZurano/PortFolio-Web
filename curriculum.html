@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -10,34 +11,39 @@
     <link rel="stylesheet" href="assets/fonts/poppins/poppins.css">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/scroll.css">
+
+
 
     <title>Portafolio Antonio Zurano</title>
 </head>
+
 <body>
-    
+
     <!-- Layout Principal -->
     <div class="layout">
 
-        <!-- Barra lateral (info usuario) --> 
+        <!-- Barra lateral (info usuario) -->
         <aside class="layout__aside">
 
             <section class="aside__user-info">
                 <!-- Información general usuario -->
                 <div class="user-info__general">
                     <div class="user-info__container-image">
-                        <img src="assets/img/default-user.jpg" class="user-info__image" alt="Foto de perfil del usuario"/>
+                        <img src="assets/img/default-user.jpg" class="user-info__image"
+                            alt="Foto de perfil del usuario" />
                         <!--aquí la sombra-->
                     </div>
                     <h2 class="user-info__name">Antonio Zurano</h2>
-                    <h4 class="user-info__job">Desarrolador Web</h4>
+                    <h3 class="user-info__job">Desarrolador Web</h3>
                 </div>
-              
+
                 <!-- Menú de navegacion -->
                 <nav class="layout__menu">
                     <ul class="menu__list">
 
                         <li class="menu__option">
-                            <a href="index.html" class="menu__link menu__link--active">
+                            <a href="index.html" class="menu__link">
                                 <i class="menu__icon fa-solid fa-house"></i>
                                 <span class="menu__overlay">Inicio</span>
                             </a>
@@ -51,7 +57,7 @@
                         </li>
 
                         <li class="menu__option">
-                            <a href="curriculum.html" class="menu__link">
+                            <a href="curriculum.html" class="menu__link  menu__link--active">
                                 <i class="menu__icon fa-solid fa-graduation-cap"></i>
                                 <span class="menu__overlay">Curriculum</span>
                             </a>
@@ -62,14 +68,14 @@
                                 <i class="menu__icon fa-solid fa-briefcase"></i>
                                 <span class="menu__overlay">Portafolio</span>
                             </a>
-                        </li>  
+                        </li>
 
                         <li class="menu__option">
                             <a href="blog.html" class="menu__link">
                                 <i class="menu__icon fa-solid fa-book"></i>
                                 <span class="menu__overlay">Blog</span>
                             </a>
-                        </li> 
+                        </li>
 
                         <li class="menu__option">
                             <a href="contacto.html" class="menu__link">
@@ -94,17 +100,17 @@
                             <a href="#" class="social__link">
                                 <i class="social__icon fab fa-github"></i>
                             </a>
-                        </li> 
+                        </li>
                         <li class="social__option">
                             <a href="#" class="social__link">
                                 <i class="social__icon fab fa-linkedin"></i>
                             </a>
-                        </li>  
+                        </li>
                         <li class="social__option">
                             <a href="#" class="social__link">
                                 <i class="social__icon fab fa-x"></i>
                             </a>
-                        </li>                                     
+                        </li>
                     </ul>
                 </div>
 
@@ -115,24 +121,29 @@
                         <span class="user-info__text">Descargar CV</span>
                     </a>
 
-                <!-- Pie de página -->
-                <footer class="user-info__footer">
-                    <p class="footer__text">&copy; 2023 Antonio Zurano WEB</p>
-                </footer>
-            </section>    
+                    <!-- Pie de página -->
+                    <footer class="user-info__footer">
+                        <p class="footer__text">&copy; 2023 Antonio Zurano WEB</p>
+                    </footer>
+            </section>
         </aside>
 
         <!-- Contenido principal -->
-        
+
         <main class="layout__content">
-            
-            <section class="content__page">
-                    <h1 class="page__name">Antonio Zurano   </h1>
-                    <h2 class="page__job">Desarrollador web</h2>           
+
+            <section class="content__page content__resume">
+                <!-- ESTE CONTENIDO CAMBIA EN CADA PAGINA DEL SITIO WEB -->
+                <header class="resume__header">
+                    <h1 class="resume__title">Curriculum <span class=title__color></span></h1>
+                </header>
+
             </section>
-        </main>    
+
+        </main>
 
     </div>
 
 </body>
+
 </html>
