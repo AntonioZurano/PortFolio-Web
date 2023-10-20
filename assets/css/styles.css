@@ -751,7 +751,7 @@ body {
     margin-bottom: 0.3rem;   
 }
 
-.timeline_text {
+.timeline__text {
     font-size: 1.4rem;
     margin-bottom: 1rem;
 }
@@ -763,6 +763,31 @@ body {
     bottom: -18px;
     width: 1px;
     background-color: var(--color-border-reviews);
+}
+
+.timeline__divider::before {
+    content:"";
+    position: absolute;
+    margin-top: 0.4rem;
+    margin-left: -0.8rem;
+    width: 1.7rem;
+    height: 1.7rem;
+    background-color: var(--color-secondary);
+    border-radius: 10rem;
+    opacity: 0.25;
+}
+
+.timeline__divider::after {
+    content:"";
+    position: absolute;
+    margin-top: 0.8rem;
+    margin-left: -0.4rem;
+    width: 0.9rem;
+    height: 0.9rem;
+    background-color: var(--color-principal);
+    border: 2px solid var(--color-secondary);
+    border-radius: 10rem;
+    opacity: 1;
 }
 
 .resume__right {
