@@ -759,7 +759,7 @@ body {
 .timeline_divider {
     position:absolute;
     top:0;
-    left: 30%;
+    left: 28%;
     bottom: -18px;
     width: 1px;
     background-color: var(--color-border-reviews);
