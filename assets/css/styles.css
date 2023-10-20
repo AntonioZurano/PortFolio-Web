@@ -696,3 +696,10 @@ body {
     color: var(--color-subtitle);
 }
 
+/*ESTILOS CERTIFICADOS*/
+
+.certificates__image {
+    width: 28rem;
+    height: 15rem;
+}
+
