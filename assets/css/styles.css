@@ -389,7 +389,7 @@ body {
 .prices__header,
 .extra__header,
 .resume__header,
-.resume_subheader {
+.resume__subheader {
     display:inline-block;
     margin-bottom: 2.5rem;
     position:relative;
