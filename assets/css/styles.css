@@ -756,10 +756,10 @@ body {
     margin-bottom: 1rem;
 }
 
-.timeline_divider {
+.timeline__divider {
     position:absolute;
     top:0;
-    left: 28%;
+    left: 30%;
     bottom: -18px;
     width: 1px;
     background-color: var(--color-border-reviews);
