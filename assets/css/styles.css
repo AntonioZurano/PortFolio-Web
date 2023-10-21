@@ -823,7 +823,7 @@ body {
     border: 1px solid var(--color-secondary);
     border-radius: 1rem;
     background-color: var(--color-principal);
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .skills_percentage {
@@ -832,6 +832,15 @@ body {
     border: 2px solid var(--color-principal);
     border-radius: 1rem;
 }
+
+.skills__percentage--p1 { width: 90%; }
+.skills__percentage--p2 { width: 60%; }
+.skills__percentage--p3 { width: 80%; }
+.skills__percentage--p4 { width: 90%; }
+.skills__percentage--p5 { width: 90%; }
+.skills__percentage--p6 { width: 80%; }
+.skills__percentage--p7 { width: 60%; }
+.skills__percentage--p8 { width: 80%; }
 
 .certificates__image {
     width: 28rem;
