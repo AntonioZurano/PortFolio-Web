@@ -842,6 +842,21 @@ body {
 .skills__percentage--p7 { width: 60%; }
 .skills__percentage--p8 { width: 80%; }
 
+.knowledges__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.knowledges__option {
+    padding: 0.4rem 1rem;
+    font-size: 1.4rem;
+    margin: 0.3rem 0.3rem;
+    background-color: var(--color-secondary);
+    border-radius: 0.3rem;
+    color: var(--color-principal);
+}
+
 .certificates__image {
     width: 28rem;
     height: 15rem;
