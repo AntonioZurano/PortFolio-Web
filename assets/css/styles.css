@@ -300,7 +300,8 @@ body {
 
 /* ESTILOS GENERALES (SOBRE MI Y OTRAS PÁGINAS) */
 .content__about,
-.content__resume {  
+.content__resume,
+.content__portfolio {  
     display: block; 
     height: 100%;
     min-height: 100%;
@@ -310,19 +311,22 @@ body {
 }
 
 .about__header,
-.resume__header {
+.resume__header,
+.portfolio__header {
     display:inline-block;
     margin-bottom: 4.5rem;
 }
 
 .about__title,
-.resume__title {
+.resume__title,
+.portfolio__title {
     font-size: 3.2rem;
     position: relative;
 }
 
 .about__title::after,
-.resume__title::after {
+.resume__title::after,
+.portfolio__title::after {
     content: "";
     position: absolute;
     top: 20px;
@@ -401,7 +405,6 @@ body {
 .clients__title,
 .prices__title,
 .extra__title,
-.resume__title,
 .resume__subtitle {
     font-size: 2.1rem;
 }
@@ -412,7 +415,6 @@ body {
 .clients__title::after,
 .prices__title::after,
 .extra__title::after,
-.resume__title::after,
 .resume__subtitle::after {
     content: "";
     position: absolute;
@@ -703,11 +705,6 @@ body {
     width: 100%;
     display: flex;
     flex-direction: row;
-}
-
-.resume__maintitle {
-    font-size: 2.5rem;
-
 }
 
 .resume__left {
