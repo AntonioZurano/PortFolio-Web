@@ -1080,3 +1080,27 @@ body {
 .article__top:hover .article__logo {
     opacity: 1;
 }
+
+.article__bottom {
+    margin: 0;
+    padding: 2.1rem 0;
+    padding-top: 1.5rem;
+    border: 0.1rem solid var(--color-border-reviews);
+    border-top: 0;
+}
+
+.article__date {
+    display: block;
+    font-size: 1.1rem;
+    line-height: 1.2rem;
+    font-weight: 300;
+    color: var(--color-subtitle);
+}
+
+.article__title {
+    font-size: 1.8rem;
+    margin-top: 0.5rem;
+}
+
+
+
