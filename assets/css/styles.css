@@ -1175,6 +1175,7 @@ body {
     outline:none;
     box-shadow: 0 1rem 1rem -8px rgba(0, 0, 0, 0.10);
     background-color: transparent;
+    z-index:1;
     line-height: 2.1rem;
 }
 
@@ -1193,11 +1194,20 @@ body {
     transition: all 300ms ease-in-out;
 }
 
-.form__input:focus~label {
+.form__input:focus~label { /* selecciona los hermanos inmediatemente despues como hijos*/
     top: -2rem;
     left:0;
     z-index: 1;
     font-size: 1.3rem;
+    color: var(--color-secondary);
+}
+
+.form__input::-webkit-input-placeholder {  /*Chrome/Opera/Safari*/
+    color: transparent;
+}
+
+.form__input::-moz-placeholder { /*Firefox*/
+    color: transparent;
 }
 
 .form_right {
