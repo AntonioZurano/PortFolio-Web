@@ -400,7 +400,8 @@ body {
 .prices__header,
 .extra__header,
 .resume__header,
-.resume__subheader {
+.resume__subheader, 
+.contact__form-header {
     display:inline-block;
     margin-bottom: 2.5rem;
     position:relative;
@@ -411,7 +412,8 @@ body {
 .clients__title,
 .prices__title,
 .extra__title,
-.resume__subtitle {
+.resume__subtitle,
+.form-header__title {
     font-size: 2.1rem;
 }
 
@@ -421,7 +423,8 @@ body {
 .clients__title::after,
 .prices__title::after,
 .extra__title::after,
-.resume__subtitle::after {
+.resume__subtitle::after,
+.form-header__title::after {
     content: "";
     position: absolute;
     top: 15px;
@@ -1140,4 +1143,9 @@ body {
 .contact__form-box {
     flex-basis: 67%;
     padding: 0 1.5rem;
+}
+
+.form__container {
+    display:flex;
+    flex-direction: row;
 }
