@@ -63,3 +63,79 @@
         position: static;
     }
 }
+
+@media (max-width: 800px) {
+    .reviews__review {
+        margin-top: 6rem;
+        flex-basis: 100%;
+    }
+
+    .reviews__container {
+        flex-direction: column;
+    }
+
+    .clients__container {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .price__container {
+        margin-bottom: 5rem;
+        flex-direction: column;
+    }
+
+    .prices__box {
+        flex-basis: 100%;
+        margin: 0;
+    }
+
+    .prices__box:last-child{
+        margin-top: 2rem;
+    }
+
+    .gallery__item {
+        flex-basis: 50%;
+    }
+
+    .articles__article {
+        flex-basis: 100%;
+    }
+
+
+}
+
+@media (max-width: 585px) {
+
+
+
+    .about__personal-info {
+        flex-direction: column;
+    }
+
+    .extra__container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .personal-info__data {
+        flex-basis: 100%;
+        padding: 0;
+        margin-top: 2rem;
+    }
+
+    .services__service {
+        flex-basis: 100%;
+        margin-right: 0;
+        margin-bottom: 3rem;
+    }
+
+    .services__container {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .extra__container {
+        flex-direction: column;
+        margin-bottom: 1.5rem;
+    }
+}
