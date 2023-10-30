@@ -3,23 +3,20 @@
         padding: 0;
     }
 
-    .layout 
-    {
+    .layout {
         min-width: 85%;
     }
 }
 
 @media (max-width: 1320px) {
-    .layout 
-    {
+    .layout {
         width: 89%;
         margin-left: 3rem;
     }
 }
 
 @media (max-width: 1160px) {
-    .layout 
-    {
+    .layout {
         width: 85%;
         margin-left: 4rem;
     }
@@ -47,8 +44,7 @@
         grid-template-columns: 100%;
     }
 
-    .layout__content
-    {
+    .layout__content {
         border-radius: 0;
         background-color: transparent;
         height: 100%;
@@ -69,7 +65,7 @@
         margin-top: 6rem;
         flex-basis: 100%;
     }
-
+ 
     .reviews__container {
         flex-direction: column;
     }
@@ -89,7 +85,7 @@
         margin: 0;
     }
 
-    .prices__box:last-child{
+    .prices__box:last-child {
         margin-top: 2rem;
     }
 
@@ -101,12 +97,15 @@
         flex-basis: 100%;
     }
 
-
 }
 
 @media (max-width: 585px) {
-
-
+    
+    .certificates__item {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
 
     .about__personal-info {
         flex-direction: column;
@@ -136,6 +135,21 @@
 
     .extra__container {
         flex-direction: column;
+        flex-wrap: wrap;
         margin-bottom: 1.5rem;
+    }
+
+    .resume__container {
+        flex-direction: column;
+    }
+
+    .resume__right {
+        flex-basis: 100%;
+        padding: 0;
+        margin-bottom: 2rem;
+    }
+
+    .contact__container {
+        flex-direction: column;
     }
 }

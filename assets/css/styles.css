@@ -665,10 +665,9 @@ body {
 }
 
 /*INFORMACION EXTRA*/
-.extra_container {
+.extra__container {
     width: 100%;
     margin-bottom: 1.5rem;
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
