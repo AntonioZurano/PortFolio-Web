@@ -899,7 +899,8 @@ body {
     width: 100%;
 }
 
-.certificates__content {
+.certificate__content {
+    margin-top: 2.5rem;
     padding: 2rem 2.5rem;
 }
 
