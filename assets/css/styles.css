@@ -967,6 +967,7 @@ body {
   
   .gallery__item {
     flex-basis: 33%;
+    width:100%;
     position: relative;
     overflow: hidden;
     padding: 1rem;
