@@ -31,6 +31,10 @@ document.querySelector('.contact__form').addEventListener('submit', function(eve
     // Si todo está bien, puedes enviar el formulario manualmente
     event.target.submit();
 
-    // Cambia la URL del navegador a la nueva página web
-    window.location.href = 'gracias.html';
+    // Espera 5 segundos antes de cambiar la URL del navegador a la nueva página web
+    setTimeout(() => {
+        window.location.assign('https://dev.antoniozurano.com/gracias.html');
+    }, 5000);
+
+
 });
