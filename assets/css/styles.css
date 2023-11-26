@@ -1159,6 +1159,22 @@ body {
     margin-top: 1rem;
 }
 
+.page__description {
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+    color: var(--color-subtitle);
+    margin-bottom: 2.5rem;
+}
+
+.page__btn {
+    display: inline-block;
+    padding: 1.2rem 3.1rem;
+    border: 2px solid var(--color-border-reviews);
+    box-shadow: 0 10px 10px -8px var(--color-border-reviews);
+    border-radius: 3rem;
+    transition: all 300ms ease-in-out;
+}
+
 .contact__form-box {
     flex-basis: 67%;
     padding: 0 1.5rem;
@@ -1259,7 +1275,7 @@ body {
     cursor: pointer;
 }
 
-.form__button:hover {
+.form__button:hover, .page__btn:hover {
     background-color: var(--color-secondary);
     color: var(--color-principal);
     box-shadow: 0 1rem 1rem -8px rgba(0, 0, 0, 0.22);
