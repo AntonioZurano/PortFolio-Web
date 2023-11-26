@@ -27,14 +27,12 @@ document.querySelector('.contact__form').addEventListener('submit', function(eve
         alert('El email no es válido');
         return;
     }
-
+   // Espera 5 segundos antes de cambiar la URL del navegador a la nueva página web
+    setTimeout(() => {
+        window.location.assign('https://dev.antoniozurano.com/gracias.html');
+    }, 3000);
     // Si todo está bien, puedes enviar el formulario manualmente
     event.target.submit();
 
-    // Espera 5 segundos antes de cambiar la URL del navegador a la nueva página web
-    setTimeout(() => {
-        window.location.assign('https://dev.antoniozurano.com/gracias.html');
-    }, 5000);
-
-
+    mostrarAlerta();
 });
