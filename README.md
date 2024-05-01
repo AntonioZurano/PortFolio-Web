@@ -1,2 +1,2 @@
 # PortFolio-Web
-Web de mi PortaFolio Personal, realizado en HTML  y CSS3, Responsive, Metodología BEM.
+Web de mi PortFolio Personal, realizado en HTML  y CSS3, Responsive,CSS con Metodología BEM. Envio de Formulario con Javascript.
