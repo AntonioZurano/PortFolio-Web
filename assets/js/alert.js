@@ -1,9 +1,9 @@
 // alert.js
 
 function mostrarAlerta() {
-    console.log("Antes de la alerta")
+//    console.log("Antes de la alerta")
     alert("Mensaje enviado correctamente");
-    console.log("Despues de la alerta")
+//    console.log("Despues de la alerta")
 }
 
 document.querySelector('.contact__form').addEventListener('submit', function(event) {
