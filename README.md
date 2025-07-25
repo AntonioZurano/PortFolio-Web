@@ -208,7 +208,7 @@ git clone https://github.com/AntonioZurano/PortFolio-Web.git
 cd PortFolio-Web
 ```
 
-2. **Abrir en un servidor local**
+2.**Abrir en un servidor local**
 
 Puedes usar cualquier servidor local, como `http-server`, `live-server` o el que prefieras. Por ejemplo, con `http-server`:
 
@@ -216,10 +216,10 @@ Puedes usar cualquier servidor local, como `http-server`, `live-server` o el que
 npx http-server
 ```
 
-3. **Acceder al portfolio**
+3.**Acceder al portfolio**
 Abre tu navegador y visita:
 
-```
+```bash
 http://localhost:8000
 ```
 
