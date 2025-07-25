@@ -215,7 +215,11 @@
     }
 
     .gallery__item {
-        flex-basis: 50%;
+        flex-basis: calc(50% - 1rem);
+    }
+
+    .gallery__container-image {
+        height: 18rem;
     }
 
     .articles__article {
@@ -295,6 +299,11 @@
 
     .gallery__item {
         flex-basis: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .gallery__container-image {
+        height: 16rem;
     }
 
     .form__container {
