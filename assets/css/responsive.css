@@ -26,11 +26,6 @@
         margin-left: 4rem;
     }
 
-    .certificates__certificate {
-        flex-basis: 100%;
-
-    }
-
 }
 
 @media (max-width: 1060px) {
@@ -229,14 +224,17 @@
 
 }
 
+/* TABLETS */
+@media (max-width: 900px) {
+    .certificates__grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, auto);
+        gap: 1.5rem;
+    }
+}
+
 @media (max-width: 585px) {
     
-    .certificates__item {
-        display: flex;
-        flex-direction: column;
-        gap: 3rem;
-    }
-
     .about__personal-info {
         flex-direction: column;
     }
