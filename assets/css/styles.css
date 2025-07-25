@@ -1060,6 +1060,15 @@ body {
     color: var(--color-secondary);
 }
 
+.gallery__description {
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    color: var(--color-subtitle);
+    padding: 0 1.5rem;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
 .gallery__icon {
     opacity: 0;
     position: absolute;

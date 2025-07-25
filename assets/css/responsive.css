@@ -250,6 +250,13 @@
         margin-bottom: 2rem;
     }
 
+    .gallery__description {
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+        padding: 0 1rem;
+        margin-bottom: 0.8rem;
+    }
+
     .about__personal-info {
         flex-direction: column;
     }
