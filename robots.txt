@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://dev.antoniozurano.com/sitemap.xml
+
+# Block access to sensitive files
+Disallow: /CV/
+Disallow: /assets/js/
+Disallow: /assets/css/
+
+# Allow important directories
+Allow: /assets/img/
+Allow: /assets/fonts/
