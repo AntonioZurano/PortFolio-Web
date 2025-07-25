@@ -186,6 +186,11 @@
 }
 
 @media (max-width: 800px) {
+    
+    .portfolio__description {
+        margin-bottom: 2.5rem;
+    }
+
     .reviews__review {
         margin-top: 6rem;
         flex-basis: 100%;
@@ -239,6 +244,12 @@
 
 @media (max-width: 585px) {
     
+    .portfolio__description {
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+        margin-bottom: 2rem;
+    }
+
     .about__personal-info {
         flex-direction: column;
     }
