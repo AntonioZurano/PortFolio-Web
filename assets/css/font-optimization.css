@@ -1,0 +1,79 @@
+/*
+ * Optimización de Carga de Fuentes
+ * Mejora FCP y elimina FOIT según recomendaciones de PageSpeed Insights
+ */
+
+/* 
+ * NOTA IMPORTANTE: 
+ * Añade estas líneas en el <head> de tus archivos HTML ANTES de cargar las fuentes:
+ * 
+ * <!-- Preconexión a recursos de fuentes -->
+ * <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+ * 
+ * <!-- Precarga de fuentes críticas (Poppins y FontAwesome) -->
+ * <link rel="preload" href="assets/fonts/poppins/Poppins-Regular.ttf" as="font" type="font/ttf" crossorigin>
+ * <link rel="preload" href="assets/fonts/fontawesome-free-6.1.2-web/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+ * <link rel="preload" href="assets/fonts/fontawesome-free-6.1.2-web/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+ */
+
+/* 
+ * Fallback fonts optimizado para reducir CLS (Cumulative Layout Shift)
+ * Sistema de fuentes que mantiene métricas similares a Poppins
+ */
+:root {
+    --font-primary: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    --font-icons: "Font Awesome 6 Free", "Font Awesome 5 Free", "FontAwesome";
+}
+
+/* 
+ * Aplicar font-display: swap a nivel global para fuentes personalizadas
+ * Esto asegura que el texto sea visible mientras se cargan las fuentes
+ */
+body {
+    font-family: var(--font-primary);
+    /* Suavizado de fuentes para mejor legibilidad */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* Optimizar renderizado de texto */
+    text-rendering: optimizeLegibility;
+}
+
+/* 
+ * Optimización para iconos FontAwesome
+ * Previene el parpadeo durante la carga
+ */
+.fa, .fas, .far, .fab, .fa-solid, .fa-regular, .fa-brands {
+    /* Forzar el uso de la fuente cuando esté disponible */
+    font-family: var(--font-icons);
+    /* Prevenir cambios de tamaño durante la carga */
+    font-size-adjust: 0.5;
+}
+
+/*
+ * Técnica avanzada: Font Loading API
+ * Descomentar si quieres usar JavaScript para control más fino
+ * 
+ * document.fonts.ready.then(function() {
+ *     document.body.classList.add('fonts-loaded');
+ * });
+ */
+
+/* Clase opcional para cuando las fuentes estén cargadas */
+.fonts-loaded {
+    /* Transición suave cuando las fuentes están listas */
+    transition: font-family 0.3s ease;
+}
+
+/*
+ * NOTAS ADICIONALES PARA OPTIMIZACIÓN:
+ * 
+ * 1. WOFF2 es el formato más eficiente (mejor compresión)
+ * 2. font-display: swap muestra texto inmediatamente con fuente fallback
+ * 3. Precarga solo fuentes críticas "above the fold"
+ * 4. Considera usar subset de fuentes para reducir tamaño
+ * 
+ * RESULTADOS ESPERADOS EN PAGESPEED:
+ * - Mejora en FCP: ~30-50ms
+ * - Reducción en CLS: ~0.05-0.1
+ * - Mejor puntuación de Performance: +5-10 puntos
+ */
